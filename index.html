@@ -1,0 +1,3840 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Strona leona</title>
+
+	<!-- styles -->
+	<style type="text/css">
+		div.box {
+
+			border: 1px solid black;
+			width: 300px;
+			background-color: lightblue;
+		}
+
+		div.pytanie {
+			margin-top: 150px;
+			background: #1a1a1a;
+		}
+
+		div.wynik {
+			position: fixed;
+			top: 0;
+			left:0;
+			right:0;
+
+			background: #1a1a1a;
+			border: 4px solid black;
+		}
+
+		body {
+			font-family: Arial, sans-serif;
+			font-size: 17px;
+			color: #f2f2f2;
+			background: #262626;
+			text-align: center;
+		}
+
+		div.clicked {
+			background-color: green !important;
+		}
+
+		div.not-clicked {
+			background-color: lightgray !important;
+		}
+
+		h1 {
+			margin-block-start: 0;
+			margin-block-end: 0;
+			padding: 0.67em;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="wynik">
+
+		<p id="demo">
+		</p>
+		<p id="cemo">
+		</p>
+		<p id="zemo">
+		</p>
+		<p id="eemo">
+		</p>
+		<p id="femo">
+		</p>
+		<p id="gemo">
+		</p>
+		<p id="iemo">
+		</p>
+	</div>
+	
+	<!-- pytanie -->
+	<p style="margin-top:10em">ma zdiagnozowany ubytek wzrostu</p>
+
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box1 onclick="box1Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box1>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>wydaje sie wrazliwe na swiatlo</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box1 onclick="box1Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box1>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>nie lubi zasłaniania oczu</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box1 onclick="box1Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box1>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>staje się nadmiernie podekscytowane w miejscach jasno i kolorowo oświetlonych</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box1 onclick="box1Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box1>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>staje się nadmiernie podekscytowane podczas oglądania TV</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box1 onclick="box1Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box1>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>ma trudności z utrzymaniem wzroku na przedmiocie</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box1 onclick="box1Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box1>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>ma trudności z podążaniem wzrokiem za przedmiotem lub gubi miejsce podczas
+			czytania</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box1 onclick="box1Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box1>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>ma trudności z rozróżnianiem kolorów, kształtów</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box1 onclick="box1Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box1>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>odwraca wzory, litery (b d), cyfry (41 14) przy kopiowaniu lub całe
+			wyrazy (sok kos)</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box1 onclick="box1Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box1>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>często skarży się na ból głowy podczas lub po czytaniu</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box1 onclick="box1Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box1>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>ma trudności ze zrozumieniem instrukcji na piśmie</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box1 onclick="box1Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box1>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>ma trudności z przepisywaniem z tablicy/ książki</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box1 onclick="box1Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box1>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>nie lubi układanek, puzzli</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box1 onclick="box1Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box1>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>ma zdiagnozowane zaburzenia mięśni (np. spastyczność,
+			wiotkość, sztywność itp.)</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box3 onclick="box3Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box3>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>wydaje się silniejsze lub słabsze niż rówieśnicy
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box3 onclick="box3Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box3>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>wydaje się zbyt mocno napięte, sztywne</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box3 onclick="box3Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box3>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>wydaje się zbyt mocno rozluźnione, ma
+			obniżone napięcie mięśniowe</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box3 onclick="box3Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box3>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>nieprawidłowo stoi / siedzi</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box3 onclick="box3Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box3>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>chwyta przedmioty zbyt
+			delikatnie, ma słaby chwyt</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box3 onclick="box3Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box3>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>chwyta przedmioty zbyt mocno
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box3 onclick="box3Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box3>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>szybko się męczy</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box3 onclick="box3Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box3>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>ma zdiagnozowany
+			ubytek słuchu</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box3 onclick="box4Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box3>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>ma trudności ze
+			skupieniem uwagi
+			jeśli w tle
+			słychać dźwięki
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box3 onclick="box4Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box3>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>nie lubi
+			głośnych
+			dźwięków</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box3 onclick="box4Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box3>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>Lubi
+			wydawać
+			głośne
+			dźwięki,
+			mówi
+			głośno
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box3 onclick="box4Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box3>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>boi
+			się
+			konkretnych
+			dźwięków
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box3 onclick="box4Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box3>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>wydaje
+			się
+			nadmiernie
+			wrażliwe
+			na
+			dźwięki
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box3 onclick="box4Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box3>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>opóźniona
+			mowa
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box3 onclick="box4Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box3>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>nie
+			zauważa
+			pewnych
+			dźwięków
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box3 onclick="box4Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box3>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>często
+			nie
+			potrafi
+			określić
+			kierunku
+			dźwięku
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box3 onclick="box4Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box3>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>często
+			powtarza
+			słowa
+			lub
+			dźwięki
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box3 onclick="box4Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box3>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>ma
+			trudności
+			ze
+			zrozumieniem
+			poleceń
+			słownych
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box3 onclick="box4Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box3>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>wymaga
+			kilkukrotnego
+			powtórzenia
+			polecenia
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box3 onclick="box4Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box3>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>myli
+			wyrażenia
+			o
+			podobnym
+			brzmieniu
+			np.
+			bułka
+			półka
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box3 onclick="box4Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box3>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>jest
+			lękliwe
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box5 onclick="box5Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box5>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>jest
+			nadmiernie
+			ruchliwe,
+			nadpobudliwe
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box5 onclick="box5Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box5>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>jest
+			impulsywne,
+			często
+			odpowiada
+			zanim
+			zostanie
+			wydane
+			polecenie
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box5 onclick="box5Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box5>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>łatwo
+			się
+			rozprasza
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box5 onclick="box5Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box5>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>ma
+			trudności
+			z
+			organizowaniem
+			sobie
+			zabawy
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box5 onclick="box5Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box5>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>woli
+			bawić
+			się
+			z
+			dorosłymi
+			niż
+			z
+			rówieśnikami
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box5 onclick="box5Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box5>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>bywa
+			agresywne
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box5 onclick="box5Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box5>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>ma
+			trudność
+			ze
+			zmianami
+			aktywności
+			/
+			miejsc
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box5 onclick="box5Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box5>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>ma
+			nieprzewidywalne
+			wybuchy
+			emocji
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box5 onclick="box5Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box5>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>ma
+			trudności
+			z
+			uspokojeniem
+			się
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box5 onclick="box5Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box5>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>ma
+			trudności
+			z
+			zasypianiem
+			i
+			snem
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box5 onclick="box5Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box5>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>wydaje
+			się,
+			że
+			wszystkie
+			rodzaje
+			jedzenia
+			mają
+			dla
+			niego
+			jednakowy
+			smak
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box6 onclick="box6Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box6>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>eksploruje
+			wykorzystując
+			zmysł
+			smaku
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box6 onclick="box6Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box6>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>nie
+			lubi
+			pokarmów
+			o
+			określonej
+			konsystencji
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box6 onclick="box6Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box6>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>domaga
+			się
+			określonych
+			pokarmów
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box6 onclick="box6Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box6>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>reaguje
+			nadmiernie
+			na
+			temperaturę
+			posiłków
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box6 onclick="box6Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box6>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>nie
+			chce
+			próbować
+			nowych
+			potraw
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box6 onclick="box6Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box6>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>Mówi
+			tylko
+			kilka
+			słów
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box7 onclick="box7Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box7>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>Nie
+			mówiw
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box7 onclick="box7Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box7>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>Sepleni
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box7 onclick="box7Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box7>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>Późno
+			zaczął
+			mówić
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box7 onclick="box7Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box7>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>Jego
+			mowa
+			jest
+			niezrozumiała
+			dla
+			osób
+			spoza
+			najbliższej
+			rodziny
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box7 onclick="box7Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box7>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>Ma
+			trudności
+			z
+			powtórzeniem
+			niektórych
+			słów
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box7 onclick="box7Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box7>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>Nie
+			lubi
+			być
+			przytulane/dotykane
+			i
+			reaguje
+			na
+			dotyk
+			jakby
+			był
+			bolesny,
+			nieprzyjemny
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>jest
+			rozdrażnione,
+			gdy
+			trzymane
+			na
+			rękach
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>nie
+			lubi
+			dotykać
+			nowych
+			i
+			różnych
+			faktur
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>unika
+			używania
+			rąk
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>nie
+			lubi
+			zabaw
+			w
+			piasku,
+			malowania
+			dłońmi
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>nie
+			lubi
+			być
+			rozebrane
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>woli
+			kąpać
+			się
+			w
+			wannie
+			niż
+			pod
+			prysznicem
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>reaguje
+			nadmiernie,
+			gdy
+			zostanie
+			dotknięte
+			niespodziewanie
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>chodzi
+			na
+			palcach
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>nie
+			lubi
+			chodzić
+			boso
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>pociera
+			dotknięte
+			miejsce
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>nie
+			lubi:
+			mycia
+			twarzy,
+			głowy,
+			zębów,
+			czesania,
+			obcinania
+			włosów,
+			paznokci,
+			kąpieli
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>zachowuje
+			się
+			agresywnie
+			w
+			stosunku
+			do
+			innych,
+			często
+			popycha,
+			szturcha
+			inne
+			dzieci
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>jest
+			nadmiernie
+			wrażliwe
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>izoluje
+			się
+			od
+			dzieci
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>reaguje
+			negatywnie
+			na
+			dotyk
+			nowych
+			ubrań
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>preferuje
+			nowe
+			ubrania
+			z
+			określonych
+			materiałów
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>domaga
+			się
+			by
+			je
+			dotykać,
+			lubi
+			gwałtowne
+			zabawy
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>nie
+			reaguje
+			na
+			ból
+			fizyczny
+			(np.
+			podczas
+			zastrzyku,
+			uderzenia
+			o
+			mebel,
+			itp.)
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>często
+			wydaje
+			się
+			nie
+			zauważać,
+			że
+			się
+			uderzyło
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>bardzo
+			często
+			wkłada
+			ręce
+			i
+			przedmioty
+			do
+			buzi
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>siada
+			na
+			dłoniach/
+			stopach
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>pcha/
+			pociera
+			ciałem
+			o
+			przedmioty,
+			podłogę,
+			ludzi
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>drapie
+			się
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>szczypie
+			się
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>uderza
+			głową
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>ciągnie
+			się
+			za
+			włosy
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>gryzie
+			się
+			w
+			rękę/
+			nadgarstek
+			/
+			przedramię
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>jest
+			statyczne,
+			nie
+			lubi
+			się
+			ruszać
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>łatwo
+			traci
+			równowagę,
+			unika
+			zabaw
+			wymagających
+			równowagi
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>ma
+			trudności
+			z
+			wchodzeniem
+			na
+			i
+			schodzeniem
+			ze
+			schodów
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>jest
+			niezdarne,
+			często
+			wpada
+			na
+			przedmioty
+			i/
+			lub
+			spada
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>długo
+			uczyło
+			się
+			jazdy
+			na
+			rowerze
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>boi
+			się/
+			unika
+			zabaw
+			takich
+			jak
+			bujanie
+			się,
+			kręcenie
+			na
+			karuzeli,
+			podskakiwanie
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>protestuje
+			przy
+			ruchach
+			do
+			tyłu,
+			nawet
+			z
+			zabezpieczona
+			głowa
+			i
+			tułowiem
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>lubi
+			intensywne
+			zabawy,
+			wirowanie,
+			obroty
+			dookoła
+			osi,
+			wydaje
+			się
+			być
+			mniej
+			wrażliwe
+			na
+			szybki
+			ruch,
+			także
+			obrotowy
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>często
+			buja
+			się
+			na
+			krześle
+			albo
+			lubi
+			przyjmować
+			pozycję
+			„do
+			góry
+			nogami”
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>nie
+			zauważa,
+			że
+			jest
+			poruszaney
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>buja
+			się
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>kiwa
+			głową
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>macha/
+			trzepie
+			palcami
+			blisko
+			oczu
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>przebiera
+			nogami
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>nadmiernie
+			gryzie
+			i
+			żuje
+			przedmioty
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>w nadmiernym
+			stopniu
+			macha
+			rękami,
+			klaszcze,
+			podskakuje,
+			tupie
+			nogami
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>chodzi
+			na
+			palcach
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>ciągnie
+			przedmioty
+			trzymane
+			między
+			zębami
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>uderza/
+			stuka
+			pietami
+			/
+			nadgarstkami
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>zaciska
+			zęby/
+			zgrzyta
+			zębamiy
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>gryzie
+			przedmioty
+			/
+			inne
+			osoby
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>uderza
+			głową
+			lub
+			ciałem
+			np.
+			o
+			podłogę
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>bije
+			się
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>gryzie
+			się
+			w
+			dłoń/
+			nadgarstek
+			/
+			ramię
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>Nie
+			lubi
+			być
+			przytulane/dotykane
+			i
+			reaguje
+			na
+			dotyk
+			jakby
+			był
+			bolesny,
+			nieprzyjemny
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>Nie
+			lubi
+			być
+			przytulane/dotykane
+			i
+			reaguje
+			na
+			dotyk
+			jakby
+			był
+			bolesny,
+			nieprzyjemny
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>Nie
+			lubi
+			być
+			przytulane/dotykane
+			i
+			reaguje
+			na
+			dotyk
+			jakby
+			był
+			bolesny,
+			nieprzyjemny
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+	<!-- pytanie -->
+	<div class="pytanie">
+
+		<p>Nie
+			lubi
+			być
+			przytulane/dotykane
+			i
+			reaguje
+			na
+			dotyk
+			jakby
+			był
+			bolesny,
+			nieprzyjemny
+		</p>
+	</div>
+
+
+	<div class="box" style="float: left; margin-left: 25%;">
+
+		<box8 onclick="box8Function(event)">
+			<h1>
+				tak
+			</h1>
+		</box8>
+	</div>
+
+
+	<div class="box" style="float: right; margin-right: 25%;">
+		<box2 onclick="box2Function(event)">
+			<h1>
+
+
+				nie
+			</h1>
+		</box2>
+
+	</div>
+
+
+	
+
+	<script>
+		var x = 0;
+		var y = 0;
+		var z = 0;
+		var e = 0;
+		var f = 0;
+		var g = 0;
+		var h = 0;
+		var i = 0;
+
+		// zwraca true jeśli było już raz kliknięte
+		function markClicked(event) {
+			const div = event.currentTarget.parentElement;
+
+			if (div.classList.contains('clicked') || div.classList.contains('not-clicked')) {
+				return true;
+			}
+
+
+			div.classList.add('clicked');
+
+			var pairedBox;
+			if (div.nextElementSibling.classList.contains('box')) {
+				pairedBox = div.nextElementSibling;
+			} else {
+				pairedBox = div.previousElementSibling;
+			}
+
+			pairedBox.classList.add('not-clicked');
+			return false;
+		}
+
+		function box2Function(event) {
+			if (markClicked(event)) return;
+
+			y = y + 1;
+			console.log(y)
+			var greeting;
+			if (y > 2) {
+				greeting = "";
+			} else {
+				greeting = "";
+			}
+			document.getElementById("demo").innerHTML = greeting;
+		}
+		function box1Function(event) {
+			if (markClicked(event)) return;
+			x = x + 1;
+			console.log(x)
+			var bid;
+			if (x > 2) {
+				bid = "Umów się z dzieckiem na badanie do optometrysty";
+			} else {
+				bid = "";
+			}
+			document.getElementById("cemo").innerHTML = bid;
+		}
+		function box3Function(event) {
+			if (markClicked(event)) return;
+			z = z + 1;
+			console.log(z)
+			var zid;
+			if (z > 2) {
+				zid = "Umów się z dzieckiem do fizjoterapeuty";
+			} else {
+				zid = "";
+			}
+			document.getElementById("zemo").innerHTML = zid;
+		}
+		function box4Function(event) {
+			if (markClicked(event)) return;
+			e = e + 1;
+			console.log(e)
+			var eid;
+			if (e > 2) {
+				eid = "Udaj się z dzieckiem na badania przetwarzania słuchowego APD";
+			} else {
+				eid = "";
+			}
+			document.getElementById("eemo").innerHTML = eid;
+		}
+		function box5Function(event) {
+			if (markClicked(event)) return;
+			f = f + 1;
+			console.log(f)
+			var fid;
+			if (f > 2) {
+				fid = "Umów się z dzieckiem na konsultację do psychologa";
+			} else {
+				fid = "";
+			}
+			document.getElementById("femo").innerHTML = fid;
+		}
+		function box6Function(event) {
+			if (markClicked(event)) return;
+			g = g + 1;
+			console.log(g)
+			var gid;
+			if (g > 2) {
+				if (h > 0) {
+					gid = "Umów się z dzieckiem na konsultację do logopedy";
+				}
+				else {
+					gid = "Umówj się z dzieckiem na konsultację do terapeuty karmienia"
+				}
+			} else {
+				gid = "";
+			}
+			document.getElementById("gemo").innerHTML = gid;
+		}
+		function box7Function(event) {
+			if (markClicked(event)) return;
+			h = h + 1;
+			console.log(h)
+			var gid;
+			if (g > 2) {
+				if (h > 0) {
+					gid = "Umów się z dzieckiem na konsultację do logopedy";
+				}
+				else {
+					gid = "Umówj się z dzieckiem na konsultację do terapeuty karmienia"
+				}
+			} else {
+				gid = "";
+			}
+			document.getElementById("gemo").innerHTML = gid;
+		}
+		function box8Function(event) {
+			if (markClicked(event)) return;
+			i = i + 1;
+			console.log(i)
+			var iid;
+			if (i > 2) {
+				iid = "Umów się z dzieckiem na diagnozę Integracji sensorycznej";
+			}
+			else if (i > 1) {
+				if (x > 1) {
+					iid = "Umów się z dzieckiem na diagnozę Integracji sensorycznej";
+				}
+
+				else if (y > 1) {
+					iid = "Umów się z dzieckiem na diagnozę Integracji sensorycznej";
+				}
+				else if (z > 1) {
+					iid = "Umów się z dzieckiem na diagnozę Integracji sensorycznej";
+				} else if (e > 1) {
+					iid = "Umów się z dzieckiem na diagnozę Integracji sensorycznej";
+				}
+				else { iid = ""; }
+			} else {
+				iid = "";
+			}
+			document.getElementById("iemo").innerHTML = iid;
+		}
+	</script>
+
+</body>
+
+</html>
