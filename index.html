@@ -22,8 +22,8 @@
 		div.wynik {
 			position: fixed;
 			top: 0;
-			left:0;
-			right:0;
+			left: 0;
+			right: 0;
 
 			background: #1a1a1a;
 			border: 4px solid black;
@@ -56,6 +56,7 @@
 
 <body>
 	<div class="wynik">
+		<p id="niezaznaczone"></p>
 
 		<p id="demo">
 		</p>
@@ -72,7 +73,7 @@
 		<p id="iemo">
 		</p>
 	</div>
-	
+
 	<!-- pytanie -->
 	<p style="margin-top:10em">ma zdiagnozowany ubytek wzrostu</p>
 
@@ -3677,7 +3678,7 @@
 	</div>
 
 
-	
+
 
 	<script>
 		var x = 0;
@@ -3689,11 +3690,41 @@
 		var h = 0;
 		var i = 0;
 
+		function czyJestZaznaczony(div) {
+			if (div.classList.contains('clicked') || div.classList.contains('not-clicked')) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+
+		function policzNieznaczone() {
+			const wszystkie = document.getElementsByClassName("box");
+			let wynik = 0;
+			for (const box of wszystkie) {
+				if (czyJestZaznaczony(box) == false) {
+					wynik = wynik + 1;
+				}
+			}
+
+			// zliczaliśmy TAK i NIE
+			wynik = wynik / 2;
+
+			const divNiezaznaczone = document.getElementById('niezaznaczone');
+			if (wynik == 0) {
+				divNiezaznaczone.innerHTML = '';			
+			} else {
+				divNiezaznaczone.innerHTML = 'Brakuje ' + wynik + ' odpowiedzi';
+			}
+		}
+
+		policzNieznaczone();
+
 		// zwraca true jeśli było już raz kliknięte
 		function markClicked(event) {
 			const div = event.currentTarget.parentElement;
 
-			if (div.classList.contains('clicked') || div.classList.contains('not-clicked')) {
+			if (czyJestZaznaczony(div)) {
 				return true;
 			}
 
@@ -3708,6 +3739,7 @@
 			}
 
 			pairedBox.classList.add('not-clicked');
+			policzNieznaczone();
 			return false;
 		}
 
